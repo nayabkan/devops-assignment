@@ -12,7 +12,7 @@ services:
       WORDPRESS_DB_USER: nayab
       WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
     ports:
-      - "8080:80"
+      - 8080:80
     networks:
       - wp_network
     depends_on:
@@ -31,7 +31,7 @@ services:
       MYSQL_USER: nayab
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       ports:
-       - "8081:80"
+       - 8081:80
     networks:
       - wp_network
     volumes:
