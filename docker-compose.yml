@@ -22,7 +22,7 @@ services:
 
   # MySQL database service
   db:
-    image: mysql:latest
+    image: mysql:5.7
     container_name: cont-mysql
     restart: always
     environment:
